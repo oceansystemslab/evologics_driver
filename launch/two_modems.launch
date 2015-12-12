@@ -1,0 +1,15 @@
+<launch>
+
+    <!-- start the modem -->
+    <node name="modemA" pkg="evologics_driver" type="evologics_node.py" output="screen">
+        <!-- set topics input and outputs -->
+        <rosparam command="load" file="$(find evologics_driver)/conf/modem.yaml" />
+    </node>
+
+    <node name="modemB" pkg="evologics_driver" type="evologics_node.py" output="screen">
+        <!-- set topics input and outputs -->
+        <rosparam command="load" file="$(find evologics_driver)/conf/modemB.yaml" />
+    </node>
+
+
+</launch>

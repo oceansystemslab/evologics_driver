@@ -1,0 +1,17 @@
+<package>
+  <description brief="evologics_driver">
+
+     evologics_driver
+
+  </description>
+  <author>nick</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/evologics_driver</url>
+  <depend package="rospy"/>
+  <depend package="vehicle_interface"/>
+  <depend package="auv_msgs" />
+  <depend package="diagnostic_msgs" />
+</package>
+
+

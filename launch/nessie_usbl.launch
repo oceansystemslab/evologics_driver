@@ -1,0 +1,9 @@
+<launch>
+
+    <!-- start the modem -->
+    <node name="modem" pkg="evologics_driver" type="evologics_node.py" output="screen">
+        <!-- set topics input and outputs -->
+        <rosparam command="load" file="$(find evologics_driver)/conf/nessie_usbl.yaml" />
+    </node>
+
+</launch>
